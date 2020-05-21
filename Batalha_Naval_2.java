@@ -50,7 +50,7 @@ public class Batalha_Naval_2
 //=====================================================================================================================================================================================================
 		//Navio1
 			int Navio1_Linhas = 0, Navio1_Colunas = 0, Navio1_LinhaI=0, Navio1_LinhaF=0, Navio1_LinhaM=0, Navio1_ColunaI = 0, Navio1_ColunaF = 0, Navio1_ColunaM = 0;
-			JOptionPane.showMessageDialog(null, "Jogador 1 cadastre as posições do 1º navio que ocupará 3 casas \n O navio não pode ser cadastrado em uma posição diagonal");
+			JOptionPane.showMessageDialog(null, "Jogador 1 cadastre as posicoes do primeiro navio que ocupara 3 casas \n O navio nao pode ser cadastrado em uma posicao diagonal");
 			do{
 			
 				//Linhas------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -58,12 +58,12 @@ public class Batalha_Naval_2
 		 			
 		 			//Linha Inicial
 		 			do{
-		 				Navio1_LinhaI = Integer.parseInt(JOptionPane.showInputDialog("Jogador 1 , Digite a linha Inicial da posição do 1º navio que são números de 1 a 10 \n Lembre-se de que o 1º navio deve ocupar 3 casas"));
+		 				Navio1_LinhaI = Integer.parseInt(JOptionPane.showInputDialog("Jogador 1 , Digite a linha Inicial da posicao do primeiro navio que sao numeros de 1 a 10 \n Lembre-se de que o primeiro navio deve ocupar 3 casas"));
 		 			}while((Navio1_LinhaI>10)||(Navio1_LinhaI<1));
 		 			
 		 			//Linha Final
 		 			do{
-		 				Navio1_LinhaF = Integer.parseInt(JOptionPane.showInputDialog("Jogador 1 , Digite a linha Final da posição do 1º navio que são números de 1 a 10 \n Lembre-se de que o 1º navio deve ocupar 3 casas"));
+		 				Navio1_LinhaF = Integer.parseInt(JOptionPane.showInputDialog("Jogador 1 , Digite a linha Final da posicao do primeiro navio que sao numeros de 1 a 10 \n Lembre-se de que o primeiro navio deve ocupar 3 casas"));
 		 			}while((Navio1_LinhaF>10)||(Navio1_LinhaF<1));
 		 			
 		 			//Meio
@@ -80,7 +80,7 @@ public class Batalha_Naval_2
 		 			//Notificação de erro
 		 			if(Navio1_Linhas == 1)
 		 			{
-		 				JOptionPane.showMessageDialog(null, "Você colocou alguma informação errada \n Tente de novo");
+		 				JOptionPane.showMessageDialog(null, "voce colocou alguma informação errada \n Tente de novo");
 		 			}
 		 		}while(Navio1_Linhas == 1);
 		 			
@@ -88,7 +88,7 @@ public class Batalha_Naval_2
 	 		 	do{
 	 		 		//Coluna Inicial
 	 		 		do{
-		 		 		String Coluna = JOptionPane.showInputDialog("Jogador 1 , Digite a coluna inicial do Navio que são letras de A até J, minúsculas \n Lembre-se de que o 1º navio deve ocupar 3 casas \na=1\nb=2\nc=3\nd=4\ne=5\nf=6\ng=7\nh=8\ni=9\nj=10");
+		 		 		String Coluna = JOptionPane.showInputDialog("Jogador 1 , Digite a coluna inicial do Navio que sao letras de A ate J, minusculas \n Lembre-se de que o primeiro navio deve ocupar 3 casas \na=1\nb=2\nc=3\nd=4\ne=5\nf=6\ng=7\nh=8\ni=9\nj=10");
 		 				if(Coluna.equals("a")){Navio1_ColunaI=1;}
 		 				else if(Coluna.equals("b")){Navio1_ColunaI=2;}
 		 				else if(Coluna.equals("c")){Navio1_ColunaI=3;}
@@ -99,12 +99,12 @@ public class Batalha_Naval_2
 		 				else if(Coluna.equals("h")){Navio1_ColunaI=8;}
 		 				else if(Coluna.equals("i")){Navio1_ColunaI=9;}
 		 				else if(Coluna.equals("j")){Navio1_ColunaI=10;}
-		 				else{ JOptionPane.showMessageDialog(null, "Você digitou um valor inválido, tente de novo");}
+		 				else{ JOptionPane.showMessageDialog(null, "voce digitou um valor invalido, tente de novo");}
 		 			}while(Navio1_ColunaI<1);
 		 			
 	 		 		//Coluna FInal
 		 			do{
-		 				String Coluna = JOptionPane.showInputDialog("Jogador 1 , Digite a coluna inicial do Navio que são letras de A até J, minúsculas \n Lembre-se de que o 1º navio deve ocupar 3 casas\na=1\nb=2\nc=3\nd=4\ne=5\nf=6\ng=7\nh=8\ni=9\nj=10");
+		 				String Coluna = JOptionPane.showInputDialog("Jogador 1 , Digite a coluna inicial do Navio que sao letras de A ate J, minusculas \n Lembre-se de que o primeiro navio deve ocupar 3 casas\na=1\nb=2\nc=3\nd=4\ne=5\nf=6\ng=7\nh=8\ni=9\nj=10");
 		 				if(Coluna.equals("a")){Navio1_ColunaF=1;}
 		 				else if(Coluna.equals("b")){Navio1_ColunaF=2;}
 		 				else if(Coluna.equals("c")){Navio1_ColunaF=3;}
@@ -115,7 +115,7 @@ public class Batalha_Naval_2
 		 				else if(Coluna.equals("h")){Navio1_ColunaF=8;}
 		 				else if(Coluna.equals("i")){Navio1_ColunaF=9;}
 		 				else if(Coluna.equals("j")){Navio1_ColunaF=10;}
-		 				else{ JOptionPane.showMessageDialog(null, "Você digitou um valor inválido, tente de novo");}
+		 				else{ JOptionPane.showMessageDialog(null, "voce digitou um valor invalido, tente de novo");}
 		 			}while(Navio1_ColunaF<1);
 		 			
 		 		 	//Meio--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	 			
@@ -146,28 +146,28 @@ public class Batalha_Naval_2
 		 			//Notificação de erro
 		 			if(Navio1_Colunas == 1)
 		 			{
-		 				JOptionPane.showMessageDialog(null, "Você colocou alguma informaçãoo errada \n Tente de novo");
+		 				JOptionPane.showMessageDialog(null, "voce colocou alguma informaçãoo errada \n Tente de novo");
 		 			}
 		 			
 	 		 	}while(Navio1_Colunas == 1);
-	 		 	if(Navio1_Colunas == Navio1_Linhas){JOptionPane.showMessageDialog(null, "O número de casas não bate com o desejado \n Tente de novo"); }
+	 		 	if(Navio1_Colunas == Navio1_Linhas){JOptionPane.showMessageDialog(null, "O numero de casas nao bate com o desejado \n Tente de novo"); }
 			}while((Navio1_Colunas == Navio1_Linhas));
 			 
 			 
 		//Navio2
 		int Navio2_Linhas = 0, Navio2_Colunas = 0, Navio2_LinhaI = 0, Navio2_LinhaF = 0, Navio2_ColunaI = 0, Navio2_ColunaF = 0;
-		JOptionPane.showMessageDialog(null, "Jogador 1 cadastre as posições do 2º navio que ocupará 2 casas \n Lembre-se de que não podem ser diagonais");
+		JOptionPane.showMessageDialog(null, "Jogador 1 cadastre as posicoes do segundo navio que ocupara 2 casas \n Lembre-se de que nao podem ser diagonais");
 		do{
 			//Linhas------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 			do{
 				//Linha Inicial
 				do{
-					Navio2_LinhaI = Integer.parseInt(JOptionPane.showInputDialog("Jogador 1 , Digite a linha inicial do 2º navio que são números de 1 a 10 minúsculas \n Lembre-se de que o 2º navio deve ocupar 2 casas"));
+					Navio2_LinhaI = Integer.parseInt(JOptionPane.showInputDialog("Jogador 1 , Digite a linha inicial do segundo navio que sao numeros de 1 a 10 minusculas \n Lembre-se de que o segundo navio deve ocupar 2 casas"));
 				}while((Navio2_LinhaI>10)&&(Navio2_LinhaI<1));//&&(Navio2_LinhaI != Navio1_LinhaI)&&(Navio2_LinhaI != Navio1_LinhaF)&&(Navio2_LinhaI != Navio1_LinhaM));
 				
 				//Linha Final
 				do{
-					Navio2_LinhaF = Integer.parseInt(JOptionPane.showInputDialog("Jogador 1 , Digite a linha final do 2º navio que são números de 1 a 10 minúsculas \n Lembre-se de que o 2º navio deve ocupar 2 casas"));
+					Navio2_LinhaF = Integer.parseInt(JOptionPane.showInputDialog("Jogador 1 , Digite a linha final do segundo navio que sao numeros de 1 a 10 minusculas \n Lembre-se de que o segundo navio deve ocupar 2 casas"));
 				}while((Navio2_LinhaF>10)&&(Navio2_LinhaF<1));//&&(Navio2_LinhaF != Navio1_LinhaI)&&(Navio2_LinhaF != Navio1_LinhaF)&&(Navio2_LinhaF != Navio1_LinhaM));
 				
 				//Linhas
@@ -181,7 +181,7 @@ public class Batalha_Naval_2
 			do{
 				//Coluna Inicial
 				do{
-					String Coluna = JOptionPane.showInputDialog("Jogador 1 , Digite a coluna inicial do 2º Navio que são letras de A até J, minúsculas \n Lembre-se de que o 2º navio deve ocupar 2 casas\na=1\nb=2\nc=3\nd=4\ne=5\nf=6\ng=7\nh=8\ni=9\nj=10");
+					String Coluna = JOptionPane.showInputDialog("Jogador 1 , Digite a coluna inicial do segundo Navio que sao letras de A ate J, minusculas \n Lembre-se de que o segundo navio deve ocupar 2 casas\na=1\nb=2\nc=3\nd=4\ne=5\nf=6\ng=7\nh=8\ni=9\nj=10");
 					if(Coluna.equals("a")){Navio2_ColunaI=1;}
 					else if(Coluna.equals("b")){Navio2_ColunaI=2;}
 					else if(Coluna.equals("c")){Navio2_ColunaI=3;}
@@ -192,11 +192,11 @@ public class Batalha_Naval_2
 					else if(Coluna.equals("h")){Navio2_ColunaI=8;}
 					else if(Coluna.equals("i")){Navio2_ColunaI=9;}
 					else if(Coluna.equals("j")){Navio2_ColunaI=10;}
-					else{ JOptionPane.showMessageDialog(null, "Você digitou um valor inválido, tente de novo");}
+					else{ JOptionPane.showMessageDialog(null, "voce digitou um valor invalido, tente de novo");}
 				}while((Navio2_ColunaI<1));
 				//Coluna Final
 				do{
-					String Coluna = JOptionPane.showInputDialog("Jogador 1 , Digite a coluna final 2º do Navio que são letras de A até J, minúsculas \n Lembre-se de que o 2º navio deve ocupar 2 casas \na=1\nb=2\nc=3\nd=4\ne=5\nf=6\ng=7\nh=8\ni=9\nj=10");
+					String Coluna = JOptionPane.showInputDialog("Jogador 1 , Digite a coluna final segundo do Navio que sao letras de A ate J, minusculas \n Lembre-se de que o segundo navio deve ocupar 2 casas \na=1\nb=2\nc=3\nd=4\ne=5\nf=6\ng=7\nh=8\ni=9\nj=10");
 					if(Coluna.equals("a")){Navio2_ColunaF=1;}
 					else if(Coluna.equals("b")){Navio2_ColunaF=2;}
 					else if(Coluna.equals("c")){Navio2_ColunaF=3;}
@@ -207,7 +207,7 @@ public class Batalha_Naval_2
 					else if(Coluna.equals("h")){Navio2_ColunaF=8;}
 					else if(Coluna.equals("i")){Navio2_ColunaF=9;}
 					else if(Coluna.equals("j")){Navio2_ColunaF=10;}
-					else{ JOptionPane.showMessageDialog(null, "Você digitou um valor inválido, tente de novo");}
+					else{ JOptionPane.showMessageDialog(null, "voce digitou um valor invalido, tente de novo");}
 				}while((Navio2_ColunaF<1));
 				
 				//Colunas
@@ -220,33 +220,33 @@ public class Batalha_Naval_2
 			}while(Navio2_Colunas == 1);	
 			
 			//Erros e repetições de barcos
-			if(Navio2_Colunas == Navio2_Linhas){ JOptionPane.showMessageDialog(null, "O número de casas não bate com o desejado \n Tente de novo"); }
+			if(Navio2_Colunas == Navio2_Linhas){ JOptionPane.showMessageDialog(null, "O numero de casas nao bate com o desejado \n Tente de novo"); }
 			
 			//Navio2_LinhaI e Navio2_ColunaI
 			else if((Navio2_LinhaI == Navio1_LinhaI)&&(Navio2_ColunaI==Navio1_ColunaI)){
-				JOptionPane.showMessageDialog(null, "O Navio 2 está no mesmo local que o Navio 1 \n Tente de novo e não os coloque na mesma posição de novo");
+				JOptionPane.showMessageDialog(null, "O Navio 2 está no mesmo local que o Navio 1 \n Tente de novo e nao os coloque na mesma posicao de novo");
 				Navio2_Linhas = 1;
 				Navio2_Colunas = 1;
 			}else if((Navio2_LinhaI == Navio1_LinhaM)&&(Navio2_ColunaI==Navio1_ColunaM)){
-				JOptionPane.showMessageDialog(null, "O Navio 2 está no mesmo local que o Navio 1 \n Tente de novo e não os coloque na mesma posição de novo");
+				JOptionPane.showMessageDialog(null, "O Navio 2 está no mesmo local que o Navio 1 \n Tente de novo e nao os coloque na mesma posicao de novo");
 				Navio2_Linhas = 1;
 				Navio2_Colunas = 1;
 			}else if((Navio2_LinhaI == Navio1_LinhaF)&&(Navio2_ColunaI==Navio1_ColunaF)){
-				JOptionPane.showMessageDialog(null, "O Navio 2 está no mesmo local que o Navio 1 \n Tente de novo e não os coloque na mesma posição de novo");
+				JOptionPane.showMessageDialog(null, "O Navio 2 está no mesmo local que o Navio 1 \n Tente de novo e nao os coloque na mesma posicao de novo");
 				Navio2_Linhas = 1;
 				Navio2_Colunas = 1;
 				
 			//Navio2_LinhaF e Navio2_ColunaF	
 			}else if((Navio2_LinhaF == Navio1_LinhaI)&&(Navio2_ColunaF==Navio1_ColunaI)){
-				JOptionPane.showMessageDialog(null, "O Navio 2 está no mesmo local que o Navio 1 \n Tente de novo e não os coloque na mesma posição de novo");
+				JOptionPane.showMessageDialog(null, "O Navio 2 está no mesmo local que o Navio 1 \n Tente de novo e nao os coloque na mesma posicao de novo");
 				Navio2_Linhas = 1;
 				Navio2_Colunas = 1;
 			}else if((Navio2_LinhaF == Navio1_LinhaM)&&(Navio2_ColunaF==Navio1_ColunaM)){
-				JOptionPane.showMessageDialog(null, "O Navio 2 está no mesmo local que o Navio 1 \n Tente de novo e não os coloque na mesma posição de novo");
+				JOptionPane.showMessageDialog(null, "O Navio 2 está no mesmo local que o Navio 1 \n Tente de novo e nao os coloque na mesma posicao de novo");
 				Navio2_Linhas = 1;
 				Navio2_Colunas = 1;
 			}else if((Navio2_LinhaF == Navio1_LinhaF)&&(Navio2_ColunaF==Navio1_ColunaF)){
-				JOptionPane.showMessageDialog(null, "O Navio 2 está no mesmo local que o Navio 1 \n Tente de novo e não os coloque na mesma posição de novo");
+				JOptionPane.showMessageDialog(null, "O Navio 2 está no mesmo local que o Navio 1 \n Tente de novo e nao os coloque na mesma posicao de novo");
 				Navio2_Linhas = 1;
 				Navio2_Colunas = 1;
 			}
@@ -255,19 +255,19 @@ public class Batalha_Naval_2
 			
 		//Navio3
 		//Inicial------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-		JOptionPane.showMessageDialog(null, "Jogador 1 cadastre as posições do 3º navio que ocupará 4 casas \n Lembre-se de que não podem ser diagonais");
+		JOptionPane.showMessageDialog(null, "Jogador 1 cadastre as posicoes do terceiro navio que ocupara 4 casas \n Lembre-se de que nao podem ser diagonais");
 		int Navio3_Linhas = 0, Navio3_Colunas = 0, Navio3_LinhaI = 0, Navio3_LinhaF = 0, Navio3_ColunaI = 0, Navio3_ColunaF = 0, Navio3_LinhaM1 = 0, Navio3_LinhaM2 = 0, Navio3_ColunaM1 = 0, Navio3_ColunaM2 = 0; 
 		do{
 			//Linhas------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 			do{
 				//Linha Inicial
 				do{
-					Navio3_LinhaI = Integer.parseInt(JOptionPane.showInputDialog("Jogador 1 , Digite a linha inicial da 1º posição do 3º navio que são números de 1 a 10"));
+					Navio3_LinhaI = Integer.parseInt(JOptionPane.showInputDialog("Jogador 1 , Digite a linha inicial da primeiro posicao do terceiro navio que sao numeros de 1 a 10"));
 				}while((Navio3_LinhaI>10)&&(Navio3_LinhaI<1));
 				
 				//Linha Final
 				do{
-					Navio3_LinhaF = Integer.parseInt(JOptionPane.showInputDialog("Jogador 1 , Digite a linha final da 2º posição do 3º navio que são números de 1 a 10"));
+					Navio3_LinhaF = Integer.parseInt(JOptionPane.showInputDialog("Jogador 1 , Digite a linha final da segundo posicao do terceiro navio que sao numeros de 1 a 10"));
 				}while((Navio3_LinhaF>10)&&(Navio3_LinhaF<1));
 				
 				//Meio
@@ -305,7 +305,7 @@ public class Batalha_Naval_2
 				//Notificação de erro
 	 			if(Navio3_Linhas == 1)
 	 			{
-	 				JOptionPane.showMessageDialog(null, "Você colocou alguma informação errada \n Tente de novo");
+	 				JOptionPane.showMessageDialog(null, "voce colocou alguma informação errada \n Tente de novo");
 	 			}
 				
 			}while(Navio3_Linhas==1);
@@ -314,7 +314,7 @@ public class Batalha_Naval_2
 			do{
 				//Coluna Inicial
 				do{
-					String Coluna = JOptionPane.showInputDialog("Jogador 1 , Digite a coluna inicial do 3º Navio que são letras de A até J\na=1\nb=2\nc=3\nd=4\ne=5\nf=6\ng=7\nh=8\ni=9\nj=10");
+					String Coluna = JOptionPane.showInputDialog("Jogador 1 , Digite a coluna inicial do terceiro Navio que sao letras de A ate J\na=1\nb=2\nc=3\nd=4\ne=5\nf=6\ng=7\nh=8\ni=9\nj=10");
 					if(Coluna.equals("a")){Navio3_ColunaI=1;}
 					else if(Coluna.equals("b")){Navio3_ColunaI=2;}
 					else if(Coluna.equals("c")){Navio3_ColunaI=3;}
@@ -325,12 +325,12 @@ public class Batalha_Naval_2
 					else if(Coluna.equals("h")){Navio3_ColunaI=8;}
 					else if(Coluna.equals("i")){Navio3_ColunaI=9;}
 					else if(Coluna.equals("j")){Navio3_ColunaI=10;}
-					else{ JOptionPane.showMessageDialog(null, "Você digitou um valor inválido, tente de novo");}
+					else{ JOptionPane.showMessageDialog(null, "voce digitou um valor invalido, tente de novo");}
 				}while((Navio3_ColunaI<1));
 			
 				//Coluna Final
 				do{
-					String Coluna = JOptionPane.showInputDialog("Jogador 1 , Digite a coluna final do 3º Navio que são letras de A até J\na=1\nb=2\nc=3\nd=4\ne=5\nf=6\ng=7\nh=8\ni=9\nj=10");
+					String Coluna = JOptionPane.showInputDialog("Jogador 1 , Digite a coluna final do terceiro Navio que sao letras de A ate J\na=1\nb=2\nc=3\nd=4\ne=5\nf=6\ng=7\nh=8\ni=9\nj=10");
 					if(Coluna.equals("a")){Navio3_ColunaF=1;}
 					else if(Coluna.equals("b")){Navio3_ColunaF=2;}
 					else if(Coluna.equals("c")){Navio3_ColunaF=3;}
@@ -341,7 +341,7 @@ public class Batalha_Naval_2
 					else if(Coluna.equals("h")){Navio3_ColunaF=8;}
 					else if(Coluna.equals("i")){Navio3_ColunaF=9;}
 					else if(Coluna.equals("j")){Navio3_ColunaF=10;}
-					else{ JOptionPane.showMessageDialog(null, "Você digitou um valor inválido, tente de novo");}
+					else{ JOptionPane.showMessageDialog(null, "voce digitou um valor invalido, tente de novo");}
 				}while((Navio3_ColunaF<1));
 				
 				//Meio
@@ -381,102 +381,102 @@ public class Batalha_Naval_2
 				//Notificação de erro
 	 			if(Navio3_Colunas == 1)
 	 			{
-	 				JOptionPane.showMessageDialog(null, "Você colocou alguma informação errada \n Tente de novo");
+	 				JOptionPane.showMessageDialog(null, "voce colocou alguma informação errada \n Tente de novo");
 	 			}
 	 			
 			}while(Navio3_Colunas == 1);
 			
 			//Erros e repetições de barcos
-			if(Navio3_Colunas == Navio3_Linhas){ JOptionPane.showMessageDialog(null, "O número de casas não bate com o desejado \n Tente de novo"); }
+			if(Navio3_Colunas == Navio3_Linhas){ JOptionPane.showMessageDialog(null, "O numero de casas nao bate com o desejado \n Tente de novo"); }
 			
 			//Navio3_LinhaI e Navio3_ColunaI
 			else if((Navio3_LinhaI == Navio1_LinhaI)&&(Navio3_ColunaI==Navio1_ColunaI)){
-				JOptionPane.showMessageDialog(null, "O Navio 3 está no mesmo local que o Navio 1 \n Tente de novo e não os coloque na mesma posição de novo");
+				JOptionPane.showMessageDialog(null, "O Navio 3 está no mesmo local que o Navio 1 \n Tente de novo e nao os coloque na mesma posicao de novo");
 				Navio3_Linhas = 1;
 				Navio3_Colunas = 1;
 			}else if((Navio3_LinhaI == Navio1_LinhaM)&&(Navio3_ColunaI==Navio1_ColunaM)){
-				JOptionPane.showMessageDialog(null, "O Navio 3 está no mesmo local que o Navio 1 \n Tente de novo e não os coloque na mesma posição de novo");
+				JOptionPane.showMessageDialog(null, "O Navio 3 está no mesmo local que o Navio 1 \n Tente de novo e nao os coloque na mesma posicao de novo");
 				Navio3_Linhas = 1;
 				Navio3_Colunas = 1;
 			}else if((Navio3_LinhaI == Navio1_LinhaF)&&(Navio3_ColunaI==Navio1_ColunaF)){
-				JOptionPane.showMessageDialog(null, "O Navio 3 está no mesmo local que o Navio 1 \n Tente de novo e não os coloque na mesma posição de novo");
+				JOptionPane.showMessageDialog(null, "O Navio 3 está no mesmo local que o Navio 1 \n Tente de novo e nao os coloque na mesma posicao de novo");
 				Navio3_Linhas = 1;
 				Navio3_Colunas = 1;
 			}else if((Navio3_LinhaI == Navio2_LinhaI)&&(Navio3_ColunaI==Navio2_ColunaI)){
-				JOptionPane.showMessageDialog(null, "O Navio 3 está no mesmo local que o Navio 2 \n Tente de novo e não os coloque na mesma posição de novo");
+				JOptionPane.showMessageDialog(null, "O Navio 3 está no mesmo local que o Navio 2 \n Tente de novo e nao os coloque na mesma posicao de novo");
 				Navio3_Linhas = 1;
 				Navio3_Colunas = 1;
 			}else if((Navio3_LinhaI == Navio2_LinhaF)&&(Navio3_ColunaI==Navio2_ColunaF)){
-				JOptionPane.showMessageDialog(null, "O Navio 3 está no mesmo local que o Navio 2 \n Tente de novo e não os coloque na mesma posição de novo");
+				JOptionPane.showMessageDialog(null, "O Navio 3 está no mesmo local que o Navio 2 \n Tente de novo e nao os coloque na mesma posicao de novo");
 				Navio3_Linhas = 1;
 				Navio3_Colunas = 1;
 			}				
 			
 			//Navio3_LinhaM1 e Navio3_ColunaM1
 			else if((Navio3_LinhaM1 == Navio1_LinhaI)&&(Navio3_ColunaM1==Navio1_ColunaI)){
-				JOptionPane.showMessageDialog(null, "O Navio 3 está no mesmo local que o Navio 1 \n Tente de novo e não os coloque na mesma posição de novo");
+				JOptionPane.showMessageDialog(null, "O Navio 3 está no mesmo local que o Navio 1 \n Tente de novo e nao os coloque na mesma posicao de novo");
 				Navio3_Linhas = 1;
 				Navio3_Colunas = 1;
 			}else if((Navio3_LinhaM1 == Navio1_LinhaM)&&(Navio3_ColunaM1==Navio1_ColunaM)){
-				JOptionPane.showMessageDialog(null, "O Navio 3 está no mesmo local que o Navio 1 \n Tente de novo e não os coloque na mesma posição de novo");
+				JOptionPane.showMessageDialog(null, "O Navio 3 está no mesmo local que o Navio 1 \n Tente de novo e nao os coloque na mesma posicao de novo");
 				Navio3_Linhas = 1;
 				Navio3_Colunas = 1;
 			}else if((Navio3_LinhaM1 == Navio1_LinhaF)&&(Navio3_ColunaM1==Navio1_ColunaF)){
-				JOptionPane.showMessageDialog(null, "O Navio 3 está no mesmo local que o Navio 1 \n Tente de novo e não os coloque na mesma posição de novo");
+				JOptionPane.showMessageDialog(null, "O Navio 3 está no mesmo local que o Navio 1 \n Tente de novo e nao os coloque na mesma posicao de novo");
 				Navio3_Linhas = 1;
 				Navio3_Colunas = 1;
 			}else if((Navio3_LinhaM1 == Navio2_LinhaI)&&(Navio3_ColunaM1==Navio2_ColunaI)){
-				JOptionPane.showMessageDialog(null, "O Navio 3 está no mesmo local que o Navio 2 \n Tente de novo e não os coloque na mesma posição de novo");
+				JOptionPane.showMessageDialog(null, "O Navio 3 está no mesmo local que o Navio 2 \n Tente de novo e nao os coloque na mesma posicao de novo");
 				Navio3_Linhas = 1;
 				Navio3_Colunas = 1;
 			}else if((Navio3_LinhaM1 == Navio2_LinhaF)&&(Navio3_ColunaM1==Navio2_ColunaF)){
-				JOptionPane.showMessageDialog(null, "O Navio 3 está no mesmo local que o Navio 2 \n Tente de novo e não os coloque na mesma posição de novo");
+				JOptionPane.showMessageDialog(null, "O Navio 3 está no mesmo local que o Navio 2 \n Tente de novo e nao os coloque na mesma posicao de novo");
 				Navio3_Linhas = 1;
 				Navio3_Colunas = 1;
 			}		
 			
 			//Navio3_LinhaM2 e Navio3_ColunaM2
 			else if((Navio3_LinhaM2== Navio1_LinhaI)&&(Navio3_ColunaM2==Navio1_ColunaI)){
-				JOptionPane.showMessageDialog(null, "O Navio 3 está no mesmo local que o Navio 1 \n Tente de novo e não os coloque na mesma posição de novo");
+				JOptionPane.showMessageDialog(null, "O Navio 3 está no mesmo local que o Navio 1 \n Tente de novo e nao os coloque na mesma posicao de novo");
 				Navio3_Linhas = 1;
 				Navio3_Colunas = 1;
 			}else if((Navio3_LinhaM2 == Navio1_LinhaM)&&(Navio3_ColunaM2==Navio1_ColunaM)){
-				JOptionPane.showMessageDialog(null, "O Navio 3 está no mesmo local que o Navio 1 \n Tente de novo e não os coloque na mesma posição de novo");
+				JOptionPane.showMessageDialog(null, "O Navio 3 está no mesmo local que o Navio 1 \n Tente de novo e nao os coloque na mesma posicao de novo");
 				Navio3_Linhas = 1;
 				Navio3_Colunas = 1;
 			}else if((Navio3_LinhaM2 == Navio1_LinhaF)&&(Navio3_ColunaM2==Navio1_ColunaF)){
-				JOptionPane.showMessageDialog(null, "O Navio 3 está no mesmo local que o Navio 1 \n Tente de novo e não os coloque na mesma posição de novo");
+				JOptionPane.showMessageDialog(null, "O Navio 3 está no mesmo local que o Navio 1 \n Tente de novo e nao os coloque na mesma posicao de novo");
 				Navio3_Linhas = 1;
 				Navio3_Colunas = 1;
 			}else if((Navio3_LinhaM2 == Navio2_LinhaI)&&(Navio3_ColunaM2==Navio2_ColunaI)){
-				JOptionPane.showMessageDialog(null, "O Navio 3 está no mesmo local que o Navio 2 \n Tente de novo e não os coloque na mesma posição de novo");
+				JOptionPane.showMessageDialog(null, "O Navio 3 está no mesmo local que o Navio 2 \n Tente de novo e nao os coloque na mesma posicao de novo");
 				Navio3_Linhas = 1;
 				Navio3_Colunas = 1;
 			}else if((Navio3_LinhaM2 == Navio2_LinhaF)&&(Navio3_ColunaM2==Navio2_ColunaF)){
-				JOptionPane.showMessageDialog(null, "O Navio 3 está no mesmo local que o Navio 2 \n Tente de novo e não os coloque na mesma posição de novo");
+				JOptionPane.showMessageDialog(null, "O Navio 3 está no mesmo local que o Navio 2 \n Tente de novo e nao os coloque na mesma posicao de novo");
 				Navio3_Linhas = 1;
 				Navio3_Colunas = 1;
 			}	
 			
 			//Navio3_LinhaF e Navio3_ColunaF
 			else if((Navio3_LinhaF == Navio1_LinhaI)&&(Navio3_ColunaF==Navio1_ColunaI)){
-				JOptionPane.showMessageDialog(null, "O Navio 3 está no mesmo local que o Navio 1 \n Tente de novo e não os coloque na mesma posição de novo");
+				JOptionPane.showMessageDialog(null, "O Navio 3 está no mesmo local que o Navio 1 \n Tente de novo e nao os coloque na mesma posicao de novo");
 				Navio3_Linhas = 1;
 				Navio3_Colunas = 1;
 			}else if((Navio3_LinhaF == Navio1_LinhaM)&&(Navio3_ColunaF==Navio1_ColunaM)){
-				JOptionPane.showMessageDialog(null, "O Navio 3 está no mesmo local que o Navio 1 \n Tente de novo e não os coloque na mesma posição de novo");
+				JOptionPane.showMessageDialog(null, "O Navio 3 está no mesmo local que o Navio 1 \n Tente de novo e nao os coloque na mesma posicao de novo");
 				Navio3_Linhas = 1;
 				Navio3_Colunas = 1;
 			}else if((Navio3_LinhaF == Navio1_LinhaF)&&(Navio3_ColunaF==Navio1_ColunaF)){
-				JOptionPane.showMessageDialog(null, "O Navio 3 está no mesmo local que o Navio 1 \n Tente de novo e não os coloque na mesma posição de novo");
+				JOptionPane.showMessageDialog(null, "O Navio 3 está no mesmo local que o Navio 1 \n Tente de novo e nao os coloque na mesma posicao de novo");
 				Navio3_Linhas = 1;
 				Navio3_Colunas = 1;
 			}else if((Navio3_LinhaF == Navio2_LinhaI)&&(Navio3_ColunaF==Navio2_ColunaI)){
-				JOptionPane.showMessageDialog(null, "O Navio 3 está no mesmo local que o Navio 2 \n Tente de novo e não os coloque na mesma posição de novo");
+				JOptionPane.showMessageDialog(null, "O Navio 3 está no mesmo local que o Navio 2 \n Tente de novo e nao os coloque na mesma posicao de novo");
 				Navio3_Linhas = 1;
 				Navio3_Colunas = 1;
 			}else if((Navio3_LinhaF == Navio2_LinhaF)&&(Navio3_ColunaF==Navio2_ColunaF)){
-				JOptionPane.showMessageDialog(null, "O Navio 3 está no mesmo local que o Navio 2 \n Tente de novo e não os coloque na mesma posição de novo");
+				JOptionPane.showMessageDialog(null, "O Navio 3 está no mesmo local que o Navio 2 \n Tente de novo e nao os coloque na mesma posicao de novo");
 				Navio3_Linhas = 1;
 				Navio3_Colunas = 1;
 			}		
@@ -489,14 +489,14 @@ public class Batalha_Naval_2
 			//Tiro
 			int Tiro_Linha=0;
 			int Tiro_Coluna =0;			
-				JOptionPane.showMessageDialog(null, "Jogador 2 cadastre as posições do seu tiro");
+				JOptionPane.showMessageDialog(null, "Jogador 2 cadastre as posicoes do seu tiro");
 				//Tiro Linha
 				do{
-					Tiro_Linha = Integer.parseInt(JOptionPane.showInputDialog("Jogador 2 , Digite a linha do tiro que são números de 1 a 10"));
+					Tiro_Linha = Integer.parseInt(JOptionPane.showInputDialog("Jogador 2 , Digite a linha do tiro que sao numeros de 1 a 10"));
 				}while((Tiro_Linha>10)&&(Tiro_Linha<1));
 				//Tiro Coluna
 				do{
-					String Coluna = JOptionPane.showInputDialog("Jogador 1 , Digite a coluna do Tiro que são letras de A até J\na=1\nb=2\nc=3\nd=4\ne=5\nf=6\ng=7\nh=8\ni=9\nj=10");
+					String Coluna = JOptionPane.showInputDialog("Jogador 1 , Digite a coluna do Tiro que sao letras de A ate J\na=1\nb=2\nc=3\nd=4\ne=5\nf=6\ng=7\nh=8\ni=9\nj=10");
 					if(Coluna.equals("a")){Tiro_Coluna=1;}
 					else if(Coluna.equals("b")){Tiro_Coluna=2;}
 					else if(Coluna.equals("c")){Tiro_Coluna=3;}
@@ -507,7 +507,7 @@ public class Batalha_Naval_2
 					else if(Coluna.equals("h")){Tiro_Coluna=8;}
 					else if(Coluna.equals("i")){Tiro_Coluna=9;}
 					else if(Coluna.equals("j")){Tiro_Coluna=10;}
-					else{ JOptionPane.showMessageDialog(null, "Você digitou um valor inválido, tente de novo");}
+					else{ JOptionPane.showMessageDialog(null, "voce digitou um valor invalido, tente de novo");}
 				}while(Tiro_Coluna<1);
 				
 				//Alteração do mapa e jogo
@@ -532,18 +532,18 @@ public class Batalha_Naval_2
 						
 					//Navios - Aviso e afundar
 						if(Navio1==false){
-							JOptionPane.showMessageDialog(null, "Parabéns jogador 2, você acertou o 1º Navio!");
+							JOptionPane.showMessageDialog(null, "parabens jogador 2, voce acertou o primeiro Navio!");
 							matriz[Navio1_LinhaI][Navio1_ColunaI]="Acerto";
 							matriz[Navio1_LinhaM][Navio1_ColunaM]="Acerto";
 							matriz[Navio1_LinhaF][Navio1_ColunaF]="Acerto";
 						}
 						else if(Navio2==false){
-							JOptionPane.showMessageDialog(null, "Parabéns jogador 2, você acertou o 2º Navio!");
+							JOptionPane.showMessageDialog(null, "parabens jogador 2, voce acertou o segundo Navio!");
 							matriz[Navio2_LinhaI][Navio2_ColunaI]="Acerto";
 							matriz[Navio2_LinhaF][Navio2_ColunaF]="Acerto";
 						}
 						else if(Navio3==false){
-							JOptionPane.showMessageDialog(null, "Parabéns jogador 2, você acertou o 3º Navio!");
+							JOptionPane.showMessageDialog(null, "parabens jogador 2, voce acertou o terceiro Navio!");
 							matriz[Navio3_LinhaI][Navio3_ColunaI]="Acerto";
 							matriz[Navio3_LinhaM1][Navio3_ColunaM1]="Acerto";
 							matriz[Navio3_LinhaM2][Navio3_ColunaM2]="Acerto";
@@ -563,10 +563,10 @@ public class Batalha_Naval_2
 						matriz[9][0]+"    | "+matriz[9][1]+" | "+matriz[9][2]+" | "+matriz[9][3]+" | "+matriz[9][4]+" | "+matriz[9][5]+" | "+matriz[9][6]+" | "+matriz[9][7]+" | "+matriz[9][8]+" | "+matriz[9][9]+" | "+matriz[9][10]+" |\n"+
 						matriz[10][0]+"  | "+matriz[10][1]+" | "+matriz[10][2]+" | "+matriz[10][3]+" | "+matriz[10][4]+" | "+matriz[10][5]+" | "+matriz[10][6]+" | "+matriz[10][7]+" | "+matriz[10][8]+" | "+matriz[10][9]+" | "+matriz[10][10]+" |\n");
 				
-				JOptionPane.showMessageDialog(null, "Você efetuou uma jogada!");
+				JOptionPane.showMessageDialog(null, "voce efetuou uma jogada!");
 
 		}while((Navio1==true)||(Navio2==true)||(Navio3==true)); 	
-		JOptionPane.showMessageDialog(null, "Parabéns jogador 2, você destruiu todos os navios colocados pelo jogador 1 e venceu o jogo!");
+		JOptionPane.showMessageDialog(null, "parabens jogador 2, voce destruiu todos os navios colocados pelo jogador 1 e venceu o jogo!");
 		
 	}
 }
